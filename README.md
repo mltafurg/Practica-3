@@ -1,11 +1,10 @@
-# Practica-3
-Verificador de sintaxis SAN con arbol sintactico
+# Práctica-3
+Verificador de sintaxis SAN con árbol sintáctico
 # Integrantes: 
--Maria Guadalupe Castro
--Maria Laura Tafur
+- María Guadalupe Castro
+- María Laura Tafur
 
-Practica realizada en python centrada en verificar una partida de ajedrez con notacion SAN, si la partida es correcta produce un pdf que contiene un arbol sintactico de la partida previamente verificada.
+Práctica realizada en Python centrada en verificar una partida de ajedrez con notación SAN. Si la partida es correcta, produce un PDF que contiene un árbol sintáctico de la partida previamente verificado.
 
 # Herramientas:
 Graphviz
-
