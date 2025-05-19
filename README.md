@@ -8,3 +8,5 @@ Práctica realizada en Python centrada en verificar una partida de ajedrez con n
 
 # Herramientas:
 Graphviz
+PyQt5
+Python
