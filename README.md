@@ -6,6 +6,8 @@ Verificador de sintaxis SAN con árbol sintáctico
 
 Práctica realizada en Python centrada en verificar una partida de ajedrez con notación SAN. Si la partida es correcta, produce un PDF que contiene un árbol sintáctico de la partida previamente verificada.
 
+link video explicativo: https://youtu.be/iPR4kzRSGN0
+
 # Herramientas:
 -Graphviz
 
