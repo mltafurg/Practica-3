@@ -156,7 +156,7 @@ def _generar_png_desde_dot():
         return False
 
 def exportar_arbol_graphviz(arbol):
-    """Función de compatibilidad con GUI original - genera archivos silenciosamente"""
+   
     try:
         # Generar archivo DOT
         dot_content = arbol.exportar_dot()
