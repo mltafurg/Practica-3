@@ -164,7 +164,7 @@ def exportar_arbol_graphviz(arbol):
         with open("arbol.dot", "w", encoding="utf-8") as f:
             f.write(dot_content)
         
-        # Intentar generar PNG automáticamente
+        # generar PNG automáticamente
         _generar_png_desde_dot()
         
         return True
@@ -172,40 +172,4 @@ def exportar_arbol_graphviz(arbol):
     except Exception:
         return False
 
-if __name__ == "__main__":
-    # Importar chessp para la prueba
-    try:
-        from chessp import parse_turns, is_valid_move
-        
-        print("Probando árbol con chessp...")
-        
-        # Texto de prueba
-        texto_partida = "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6"
-        
-        # Usar chessp para parsear
-        turns = parse_turns(texto_partida)
-        arbol = ArbolPartida()
-        
-        for t in turns:
-            partes = t.split()
-            if len(partes) >= 2:
-                jugada_blanca = partes[1]
-                jugada_negra = partes[2] if len(partes) == 3 else None
-                turno_numero = partes[0].replace(".", "")
-                
-                if is_valid_move(jugada_blanca):
-                    if jugada_negra is None or is_valid_move(jugada_negra):
-                        arbol.agregar_turno(turno_numero, jugada_blanca, jugada_negra)
-        
-        # Exportar
-        if exportar_arbol_graphviz(arbol):
-            print("Archivos generados: arbol.dot y arbol.png")
-        else:
-            print("Error al generar archivos")
-            
-    except ImportError:
-        print("No se pudo importar chessp para la prueba")
-    
-    # Mantener consola abierta en Windows
-    if sys.platform.startswith('win'):
-        input("\nPresiona Enter para salir...")
+
