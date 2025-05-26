@@ -6,7 +6,7 @@ import sys
 class Jugada:
     def __init__(self, notacion):
         self.notacion = notacion
-        self.texto = notacion  # Para compatibilidad
+        self.texto = notacion  
 
 class Turno:
     def __init__(self, numero):
@@ -67,7 +67,7 @@ class ArbolPartida:
         self.raiz = nodos[0] if nodos else None
 
     def agregar_turno(self, numero_turno, jugada_blanca, jugada_negra=None):
-        """Método para compatibilidad con GUI original"""
+        
         # Crear objetos de turno
         turno = Turno(numero_turno)
         turno.set_jugada_blanca(Jugada(jugada_blanca))
